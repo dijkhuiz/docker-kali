@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  kali:
+    container_name: 'Kali'
+    build: .
+    image: kalilinux/kali-rolling
+    restart: always
+    volumes:
+      - ./mount:/mnt/mount
+    tty: true
